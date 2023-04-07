@@ -1,0 +1,33 @@
+<meta charset = "UFT-8">
+
+<script>
+
+function pulaLinha(numeroDeLinhas,tipo) {
+//essa função escolhe, se pulaLinha(null,null) = pula 1 linha, se pulaLinha(null,1) = pula 1 linha e acrescenta o detalhe abaixo, se pulaLinha(10,1) = vai pular 10 linhas e acrescentar hr no final, se pulaLinha(10,null) = vai pular 10 linhas e não acrescentar o detalhe no final
+
+		if (tipo == null) {
+			
+			if (numeroDeLinhas == null) {
+				document.write("<br>");} 
+
+			else {
+
+				for (var i = numeroDeLinhas ; i >= 0; i--){
+			 		
+			 		document.write("<br>");}}}
+
+		else {
+			if (numeroDeLinhas == 0) {
+				document.write("<br><hr>");} 
+
+			else {
+
+				for (var i = numeroDeLinhas ; i >= 0; i--){
+			 		
+			 		document.write("<br>"); }
+			 		document.write("<hr>");
+			 	}}}
+
+
+
+</script>
